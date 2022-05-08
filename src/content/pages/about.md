@@ -7,7 +7,7 @@ I was born in 1999 in Karachi, Pakistan and raised in a tightly-knit, middle cla
 
 ![Toys](/assets/cover.jpg "Toys")
 
-Eventually, I grew up and finished by elementary and secondary education, never stopping my fascination for computers. We were amongst the early majority when my father bought an amazing machine into our home in 2004 called the 'Personal Computer' and from then on, things changed. Opening up my Desktop Computer and tinkering around with its components was one of my childhood fascinations, coupled with sketching futuristic cars and reading and writing fiction.
+Eventually, I grew up and finished my elementary and secondary education, never getting bored of my fascination for computers. We were amongst the early majority in Pakistan when my father bought an amazing machine into our home in 2004 called the 'Personal Computer' and from then on, things changed. Opening up my Desktop Computer and tinkering around with its components was one of my childhood fascinations, coupled with sketching futuristic cars and reading and writing fiction.
 
 Throughout my ups and downs growing up, books and computers never left my side, and they continue to bolster me to date. Through the whims of fate, I ended up studying Business for my Bachelor's education, but my fascination for tech got the better of me. I found myself working for a technology startup in 2020 and the rest is history.
 
@@ -37,8 +37,6 @@ The Gulag Archipelago by Aleksandr Solzhenitsyn
 
 The Laws of Human Nature by Robert Greene
 
-
-
 **My Curated Reading List (Product Management):**
 
 The Product Manager's Desk Reference - My First Guide into the world of Product; I keep a copy at my desk at all times.
@@ -59,4 +57,4 @@ Sprint - A book that has been instrumental in my career to help solvie complex p
 
 Continuous Discovery Habits - A Book on becoming better at Product experimentation.
 
-The Lean Startups - A blueprint for using the dexterity and flexibility of early stage startups to fail faster and leaner.
+The Lean Startup - A blueprint for using the dexterity and flexibility of early stage startups to fail faster and leaner.
