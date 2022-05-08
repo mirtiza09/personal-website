@@ -3,14 +3,13 @@ template: blog-post
 title: The Mechanics of Disruption
 slug: How Digital Transformation is Shaking Established Industries
 date: 2020-07-31 02:40
-description: >+
+description: >
   Digital transformation is the integration of digital technologies across all
   areas of business to create more value. No matter the size of your business —
   Digital transformation can, and will, work for almost every business.
+featuredImage: /assets/1_2dx1j96ojmsrn46ihbgw3w.png
 ---
 <!--StartFragment-->
-
-![](https://miro.medium.com/max/1400/1*2Dx1J96OjmSRN46IHbgw3w.png)
 
 As human civilizations started emerging along river beds thousands of years ago, businesses started to emerge. Since then, the driving purpose behind businesses has remained unchanged: to create value. For the vast majority of human history, rules remained unchanged. Companies emerged, had a stable, but long, lifetime, and ended. In the recent times, however, the businesses that had been operating for decades without major problems have been disrupted by new entrants before they could even notice.
 
