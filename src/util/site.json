@@ -2,10 +2,10 @@
   "meta": {
     "title": "Muhammad Irtiza",
     "titleTemplate": "%s",
-    "description": "My personal blog",
+    "description": "My personal blog where I share my thoughts and opinions on Product Management.",
     "siteUrl": "https://www.mirtiza.com",
     "image": "/assets/profile-picture.jpg",
-    "iconimage": "/assets/d59c9002030448f1193adf7d7600a52a.png",
+    "iconimage": "/assets/1_yinyang.gif",
     "twitterUsername": "@stackrole"
   },
   "ga": "UA-XXXXXXXXX-X"
