@@ -3,9 +3,9 @@ template: index-page
 slug: /
 title: Muhammad Irtiza
 tagline: Product Manager
-featuredImage: /assets/alex-zr48yvupk04-unsplash.jpg
+featuredImage: /assets/website-minimal-wallper.jpg
 cta:
   ctaText: Know more
   ctaLink: /about
 ---
-He is a award winning fintech product manager, based in sunny side of California. Working as Product Owner at CreditBook.
+He is a young, driven, and passionate product manager, with experience leading cross-functional teams to plan, build, launch, and manage world-class blockchain and data products. Proudly working to improve financial outcomes for Micro, Small, and Medium Enterprises at CreditBook.
