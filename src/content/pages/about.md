@@ -17,27 +17,11 @@ Learning from the ground-up using books and online resources proved to be benefi
 
 While I have just started on my journey to become a better PM, I would like to share my learnings with the world to learn and grow together. Apart from Product Management, I am also keenly interested in Anthropology, Human Nature, Neurology, and Philosophy. In fact, the best way to know about me is to refer to my reading list.
 
-**My Curated Reading List (General):**
 
-Sapiens by Yuval Noah Harari
 
-21 Lessons for 21st Century by Yuval Noah Harari
 
-Behave by Robert Sapolsky
 
-Fallen Leaves by Will Durant
-
-Lessons from History by Will Durant
-
-The Prophet by Khalil Jibran
-
-The Alchemist by Paulo Coelho
-
-The Gulag Archipelago by Aleksandr Solzhenitsyn
-
-The Laws of Human Nature by Robert Greene
-
-**My Curated Reading List (Product Management):**
+## **My Curated Reading List (Product Management):**
 
 The Product Manager's Desk Reference - My First Guide into the world of Product; I keep a copy at my desk at all times.
 
@@ -58,3 +42,23 @@ Sprint - A book that has been instrumental in my career to help solvie complex p
 Continuous Discovery Habits - A Book on becoming better at Product experimentation.
 
 The Lean Startup - A blueprint for using the dexterity and flexibility of early stage startups to fail faster and leaner.
+
+## **My Curated Reading List (General):**
+
+Sapiens by Yuval Noah Harari
+
+21 Lessons for 21st Century by Yuval Noah Harari
+
+Behave by Robert Sapolsky
+
+Fallen Leaves by Will Durant
+
+Lessons from History by Will Durant
+
+The Prophet by Khalil Jibran
+
+The Alchemist by Paulo Coelho
+
+The Gulag Archipelago by Aleksandr Solzhenitsyn
+
+The Laws of Human Nature by Robert Greene
