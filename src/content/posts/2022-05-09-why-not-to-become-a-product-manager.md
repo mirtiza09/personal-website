@@ -28,13 +28,13 @@ A quick look at any recruitment portal will give you a clear picture into why I 
 
 Additionally, technology startups, on average, hire Product Managers much later than specialized talent i.e. Engineers, Designers, and Data Engineers. The founders themselves act as a PM and usually do the job pretty well, which decreased the amount of companies that hire a PM.
 
-### Depending on the circumstances, your team might hate you
+### Depending on the circumstances, your team might not fancy you
 
-Envy is a human emotion that is difficult to get rid of. Usually, when you are early in your career, you might be working with squad members and team members that are older than you or more experienced. They might resist to any directions from you in a bid to maintain their freedom and control. They might even complain that you are trying to tell them how to do their job when you are only trying to help them.
+Usually, when you are early in your career, you might be working with squad members and team members that are older than you or more experienced. They might resist to any directions from you in a bid to maintain their freedom and control. They might even complain that you are trying to tell them how to do their job when you are only trying to help them. This is all natural.
 
-Additionally, when you are not contributing to the team in the form of tangible output, it might be perceived by some that you are unfairly reaping the rewards of the hard work of others and a free rider is not seen favorably. You have to form good relationships with your team members, even if it means bowing down in case of an unfair demand.
+Additionally, when you are not contributing to the team in the form of tangible output, it might be perceived by some that you are unfairly reaping the rewards of the hard work of others and a free rider is not seen favorably. You have to prioritize good relationships with your team members, even if it means compromising on some things to achieve that. Additionally, you need to be actively working hard to match your team and try to influence through good example.
 
-### You are very replaceable and everyone wants to become a PM
+### You are replaceable and a lot of people want to become a PM
 
 A lot of PM roles do not necessarily require a Computer Science degree. At first, I thought it was a good thing since I come from a Business educational background. However, I quickly realized that everyone around me could potentially move into my position without any prior context or relevant experience. I have been approached by countless colleagues from my college on 'How to break into Product' or 'How do I become a PM' since they think it is a cool job which requires being the 'CEO of the product', and largely I am writing this to address their myths.
 
