@@ -4,6 +4,7 @@ title: SQL For Product Managers
 slug: sql
 date: 2022-07-26 19:53
 description: SQL for Product Managers
+featuredImage: /assets/0_rwqi3xkmdzgsvuxr.jpg
 ---
 <!--StartFragment-->
 
