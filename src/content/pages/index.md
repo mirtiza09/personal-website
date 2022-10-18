@@ -8,4 +8,4 @@ cta:
   ctaText: Know more
   ctaLink: /about
 ---
-He is a young, driven, and passionate product manager, with experience leading cross-functional teams to plan, build, launch, and manage world-class blockchain and data products. Proudly working to improve financial outcomes for Micro, Small, and Medium Enterprises at CreditBook.
+He is a young, driven, and passionate product manager, with experience leading cross-functional teams to plan, build, launch, and manage world-class blockchain and data products.
