@@ -4,7 +4,7 @@ title: SQL For Product Managers
 slug: sql
 date: 2022-07-26 19:53
 description: SQL for Product Managers
-featuredImage: /assets/0_rwqi3xkmdzgsvuxr.jpg
+featuredImage: /assets/dall·e-2023-12-06-21.53.28-an-illustration-for-sql-for-product-managers-with-a-color-scheme-of-teal-and-black.-the-image-should-depict-a-digital-sleek-setting-featuring-a-la.png
 ---
 <!--StartFragment-->
 
