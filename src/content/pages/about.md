@@ -9,17 +9,23 @@ I was born in 1999 in Karachi, Pakistan and raised in a tightly-knit, middle cla
 
 Eventually, I grew up and finished my elementary and secondary education, never getting bored of my fascination for computers. We were amongst the early majority in Pakistan when my father bought an amazing machine into our home in 2004 called the 'Personal Computer' and from then on, things changed. Opening up my Desktop Computer and tinkering around with its components was one of my childhood fascinations, coupled with sketching futuristic cars and reading and writing fiction.
 
-Throughout my ups and downs growing up, books and computers never left my side, and they continue to bolster me to date. Through the whims of fate, I ended up studying Business for my Bachelor's education, but my fascination for tech got the better of me. I found myself working for a technology startup in 2020 and the rest is history.
+Throughout my ups and downs growing up, books and computers never left my side, and they continue to bolster me to date. Through the whims of fate, I ended up studying Business for my Bachelor's education, but my fascination for tech got the better of me. I found myself working for a technology startup in 2020 and the rest is history. Eventually, I ended up pursuing a Masters degree in Information Technology at La Trobe University in Melbourne, Australia, where I am currently located.
 
 What started as a way to redeem my childhood fascination turned into a career most call 'Product Management'. Seeing my eagerness to contribute and my business education, I was given a chance to work as the first product manager at a rapidly growing startup and what followed was a period characterized by immense growth.
 
 Learning from the ground-up using books and online resources proved to be beneficial for me since I could learn from the best and experiment without biases or restrictions. I learnt a lot, and messed up a lot as well - I was a terrible Product Manager for my first product and I duly thank the team for their patience while I learnt.
 
-While I have just started on my journey to become a better PM, I would like to share my learnings with the world to learn and grow together. Apart from Product Management, I am also keenly interested in Anthropology, Human Nature, Neurology, and Philosophy. In fact, the best way to know about me is to refer to my reading list.
+As I navigated the uncharted waters of product management, it dawned on me that my insatiable curiosity for technology and my propensity for problem-solving could be channeled into an even more technical and hands-on role. The intersection of technology and creativity, where innovation thrives, became a call I could no longer ignore. My childhood explorations into the heart of a desktop computer were not just a pastime; they were the seeds of a budding software engineer, yearning for the meticulousness and challenge of coding and system design.
 
+While I have just started on my journey, I would like to share my learnings with the world to learn and grow together. Apart from Product Management, I am also keenly interested in Anthropology, Human Nature, Neurology, and Philosophy. In fact, the best way to know about me is to refer to my reading list.
 
+## **My Curated Reading List (Software Engineering):**
 
+Modern Full-Stack Development: Using TypeScript, React, Node.js, Webpack, Python, Django, and Docker
 
+Software Engineering at Google: Lessons Learned from Programming Over Time
+
+T﻿he Art of Science and Engineering by Richard Hamming
 
 ## **My Curated Reading List (Product Management):**
 
@@ -58,7 +64,5 @@ Lessons from History by Will Durant
 The Prophet by Khalil Jibran
 
 The Alchemist by Paulo Coelho
-
-The Gulag Archipelago by Aleksandr Solzhenitsyn
 
 The Laws of Human Nature by Robert Greene
