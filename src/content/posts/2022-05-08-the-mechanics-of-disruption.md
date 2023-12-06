@@ -7,7 +7,7 @@ description: >
   Digital transformation is the integration of digital technologies across all
   areas of business to create more value. No matter the size of your business —
   Digital transformation can, and will, work for almost every business.
-featuredImage: /assets/1_2dx1j96ojmsrn46ihbgw3w.png
+featuredImage: /assets/dall·e-2023-12-06-22.10.19-an-intricate-and-technical-illustration-for-the-mechanics-of-disruption-using-a-teal-and-black-color-scheme.-the-image-should-depict-an-array-of-me.png
 ---
 <!--StartFragment-->
 
