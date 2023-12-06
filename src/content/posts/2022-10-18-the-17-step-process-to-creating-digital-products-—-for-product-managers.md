@@ -4,7 +4,7 @@ title: The 17-step process to creating Digital Products — for Product Managers
 slug: 17step
 date: 2022-08-03 19:56
 description: The 17-step process for Product Managers to create digital products.
-featuredImage: /assets/dall·e-2023-12-06-21.45.56-a-conceptual-illustration-showcasing-the-17-step-process-of-creating-digital-products-with-a-color-scheme-of-teal-and-black.-the-image-features-a-cir.png
+featuredImage: /assets/dall·e-2023-12-06-22.07.16-a-stylized-illustration-for-the-17-step-process-to-creating-digital-products-influenced-by-the-design-and-color-scheme-of-the-provided-image-but-wi.png
 ---
 <!--StartFragment-->
 
