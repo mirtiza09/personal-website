@@ -9,7 +9,7 @@ description: Amidst this backdrop, an anonymous individual under the nickname of
   online, without a ‘third-party’ bank or institution, based on a combination of
   already existing technologies such as cryptography, using a peer-to-peer
   network.
-featuredImage: /assets/block-blockchain-business-chain.jpeg
+featuredImage: /assets/dall·e-2023-12-06-21.56.22-an-illustration-titled-the-story-of-blockchain-inspired-by-the-provided-image-and-using-the-same-teal-and-black-color-scheme.-the-central-feature-o.png
 ---
 <!--StartFragment-->
 
