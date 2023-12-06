@@ -2,9 +2,9 @@
   "meta": {
     "title": "Muhammad Irtiza",
     "titleTemplate": "%s",
-    "description": "My personal blog where I share my thoughts and opinions on Product Management.",
+    "description": "My personal blog where I share my thoughts and opinions on tech.",
     "siteUrl": "https://www.mirtiza.com",
-    "image": "/assets/profile-picture.jpg",
+    "image": "/assets/cover.jpg",
     "iconimage": "/assets/1_yinyang.gif",
     "twitterUsername": "@stackrole"
   },
