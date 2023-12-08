@@ -1,7 +1,7 @@
 ---
 template: blog-post
 title: The Mechanics of Disruption
-slug: mod
+slug: /mod
 date: 2020-07-31 02:40
 description: >
   Digital transformation is the integration of digital technologies across all
