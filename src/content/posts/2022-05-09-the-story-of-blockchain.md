@@ -1,7 +1,7 @@
 ---
 template: blog-post
 title: The Story of Blockchain
-slug: Get up to speed on blockchain within 2 minutes
+slug: /blockchain
 date: 2022-05-09 12:03
 description: Amidst this backdrop, an anonymous individual under the nickname of
   ‘Satoshi Nakamoto’ released a whitepaper on ‘Bitcoin — a peer-to-peer
