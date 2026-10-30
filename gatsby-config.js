@@ -44,26 +44,7 @@ module.exports = {
               maxWidth: 1024,
               showCaptions: true,
               linkImagesToOriginal: false,
-              tracedSVG: true,
               loading: "lazy",
-            },
-          },
-          {
-            resolve: `@gatsby-contrib/gatsby-plugin-elasticlunr-search`,
-            options: {
-              // Fields to index
-              fields: [`title`, `template`, `slug`],
-              // How to resolve each field`s value for a supported node type
-              resolvers: {
-                // For any node of type MarkdownRemark, list how to resolve the fields` values
-                MarkdownRemark: {
-                  template: node => node.frontmatter.template,
-                  title: node => node.frontmatter.title,
-                  slug: node => node.frontmatter.slug,
-                },
-              },
-              // Optional filter to limit indexed nodes
-              filter: (node, getNode) => node.frontmatter.tags !== "exempt",
             },
           },
           `gatsby-remark-responsive-iframe`,
@@ -87,7 +68,7 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     "gatsby-plugin-theme-ui",
-    `gatsby-plugin-netlify-cms`,
+    `gatsby-plugin-decap-cms`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
@@ -108,14 +89,12 @@ module.exports = {
       },
     },
     "gatsby-plugin-offline",
-    `gatsby-plugin-netlify`,
     {
       resolve: `gatsby-plugin-netlify`,
       options: {
         headers: {},
         allPageHeaders: [],
         mergeSecurityHeaders: true,
-        mergeLinkHeaders: true,
         mergeCachingHeaders: true,
         transformHeaders: (headers, path) => headers,
         generateMatchPathRewrites: true,

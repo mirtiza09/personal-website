@@ -1,7 +1,6 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 import { Component } from "react"
-import { Index } from "elasticlunr"
 import { Link } from "gatsby"
 import { RiSearchLine } from "react-icons/ri"
 
@@ -44,11 +43,7 @@ export default class Search extends Component {
             <ul sx={searchStyle.searchResults}>
               {this.state.results.map(page => (
                 <li key={page.id}>
-                  {page.template === "blog-post" ? (
-                    <Link to={page.slug}>{page.title}</Link>
-                  ) : (
-                    ""
-                  )}
+                  <Link to={page.frontmatter.slug}>{page.frontmatter.title}</Link>
                 </li>
               ))}
             </ul>
@@ -58,17 +53,18 @@ export default class Search extends Component {
     )
   }
 
-  getOrCreateIndex = () =>
-    this.index ? this.index : Index.load(this.props.searchIndex)
-
   search = evt => {
     const query = evt.target.value
-    this.index = this.getOrCreateIndex()
+    const terms = query.toLowerCase().split(/\s+/).filter(Boolean)
     this.setState({
       query,
-      results: this.index
-        .search(query, {})
-        .map(({ ref }) => this.index.documentStore.getDoc(ref)),
+      results: terms.length
+        ? this.props.pages.filter(page =>
+            terms.every(term =>
+              page.frontmatter.title.toLowerCase().includes(term)
+            )
+          )
+        : [],
     })
   }
 }

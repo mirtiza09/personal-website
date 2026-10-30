@@ -18,14 +18,22 @@ const query = graphql`
         siteTitle: title
       }
     }
-    siteSearchIndex {
-      index
+    searchPages: allMarkdownRemark(
+      filter: { frontmatter: { template: { eq: "blog-post" } } }
+    ) {
+      nodes {
+        id
+        frontmatter {
+          title
+          slug
+        }
+      }
     }
   }
 `
 
 const Layout = ({ children, className, props }) => {
-  const { site, siteSearchIndex } = useStaticQuery(query)
+  const { site, searchPages } = useStaticQuery(query)
   const { siteTitle } = site.siteMetadata
 
   return (
@@ -34,12 +42,12 @@ const Layout = ({ children, className, props }) => {
         <Logo title={siteTitle} />
         <div sx={layoutStyle.nav}>
           <div sx={{ display: ["flex", "flex", "flex", "none"] }}>
-            <Search searchIndex={siteSearchIndex.index} />
+            <Search pages={searchPages.nodes} />
           </div>
           <Navigation />
         </div>
         <div sx={layoutStyle.appearance}>
-          <Search searchIndex={siteSearchIndex.index} />
+          <Search pages={searchPages.nodes} />
           <Theme />
         </div>
       </Header>
