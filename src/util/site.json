@@ -8,5 +8,6 @@
     "iconimage": "/assets/1_yinyang.gif",
     "twitterUsername": "@stackrole"
   },
-  "ga": "UA-XXXXXXXXX-X"
+  "ga": "UA-XXXXXXXXX-X",
+  "playbookUrl": "https://playbook.mirtiza.com"
 }

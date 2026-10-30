@@ -1,79 +1,36 @@
-/** @jsx jsx */
-import { jsx } from "theme-ui"
+import React from "react"
 import { Link, graphql } from "gatsby"
-import { GatsbyImage } from "gatsby-plugin-image"
 import { RiArrowRightLine, RiArrowLeftLine } from "react-icons/ri"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-
-const styles = {
-  "article blockquote": {
-    "background-color": "cardBg",
-  },
-  pagination: {
-    a: {
-      color: "muted",
-      "&.is-active": {
-        color: "text",
-      },
-      "&:hover": {
-        color: "text",
-      },
-    },
-  },
-}
+import FeaturedImage from "../components/featured-image"
 
 const Pagination = props => (
-  <div className="pagination -post" sx={styles.pagination}>
-    <ul>
-      {props.previous && props.previous.frontmatter.template === "blog-post" && (
-        <li>
-          <Link to={props.previous.frontmatter.slug} rel="prev">
-            <p
-              sx={{
-                color: "muted",
-              }}
-            >
-              <span className="icon -left">
-                <RiArrowLeftLine />
-              </span>{" "}
-              Previous
-            </p>
-            <span className="page-title">
-              {props.previous.frontmatter.title}
-            </span>
-          </Link>
-        </li>
-      )}
-      {props.next && props.next.frontmatter.template === "blog-post" && (
-        <li>
-          <Link to={props.next.frontmatter.slug} rel="next">
-            <p
-              sx={{
-                color: "muted",
-              }}
-            >
-              Next{" "}
-              <span className="icon -right">
-                <RiArrowRightLine />
-              </span>
-            </p>
-            <span className="page-title">{props.next.frontmatter.title}</span>
-          </Link>
-        </li>
-      )}
-    </ul>
-  </div>
+  <nav className="post-pagination" aria-label="More posts">
+    {props.previous && props.previous.frontmatter.template === "blog-post" && (
+      <Link to={props.previous.frontmatter.slug} rel="prev" className="card">
+        <span className="meta-label">
+          <RiArrowLeftLine aria-hidden="true" /> Previous
+        </span>
+        <span className="page-title">{props.previous.frontmatter.title}</span>
+      </Link>
+    )}
+    {props.next && props.next.frontmatter.template === "blog-post" && (
+      <Link to={props.next.frontmatter.slug} rel="next" className="card -next">
+        <span className="meta-label">
+          Next <RiArrowRightLine aria-hidden="true" />
+        </span>
+        <span className="page-title">{props.next.frontmatter.title}</span>
+      </Link>
+    )}
+  </nav>
 )
 
 const Post = ({ data, pageContext }) => {
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html, excerpt } = markdownRemark
 
-  const Image = frontmatter.featuredImage
-    ? frontmatter.featuredImage.childImageSharp.gatsbyImageData
-    : ""
   const { previous, next } = pageContext
 
   let props = {
@@ -82,38 +39,33 @@ const Post = ({ data, pageContext }) => {
   }
 
   return (
-    <Layout className="page">
+    <Layout className="post-page">
       <Seo
         title={frontmatter.title}
         description={
           frontmatter.description ? frontmatter.description : excerpt
         }
-        image={Image}
         article={true}
       />
       <article className="blog-post">
-        <header className="featured-banner">
-          <section className="article-header">
+        <header className="page-band article-header bg-blue-light">
+          <div className="container">
+            <time className="section-label">{frontmatter.date}</time>
             <h1>{frontmatter.title}</h1>
-            <time sx={{color: "muted"}}>{frontmatter.date}</time>
-          </section>
-          {Image ? (
-            <GatsbyImage
-              image={Image}
-              alt={frontmatter.title + " - Featured image"}
-              className="featured-image"
-            />
-          ) : (
-            ""
-          )}
+          </div>
         </header>
-
-        <div
-          className="blog-post-content"
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
+        <div className="container article-body">
+          <FeaturedImage
+            file={frontmatter.featuredImage}
+            alt={frontmatter.title + " - Featured image"}
+          />
+          <div
+            className="blog-post-content"
+            dangerouslySetInnerHTML={{ __html: html }}
+          />
+          {(previous || next) && <Pagination {...props} />}
+        </div>
       </article>
-      {(previous || next) && <Pagination {...props} />}
     </Layout>
   )
 }
@@ -132,6 +84,7 @@ export const pageQuery = graphql`
         title
         description
         featuredImage {
+          publicURL
           childImageSharp {
             gatsbyImageData(layout: FULL_WIDTH)
           }

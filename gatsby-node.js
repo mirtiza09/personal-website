@@ -8,7 +8,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
   const result = await graphql(`
     {
-      allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+      allMarkdownRemark(sort: { frontmatter: { date: DESC } }) {
         edges {
           node {
             id
@@ -76,7 +76,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   });
 };
 
-exports.onCreateNode = ({ node, actions }) => {
+exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions;
   if (node.internal.type === `MarkdownRemark`) {
     // Use the frontmatter slug if it exists
@@ -87,4 +87,33 @@ exports.onCreateNode = ({ node, actions }) => {
       value: slug,
     });
   }
+};
+
+// CMS stores images as /assets/... paths (rewritten to relative ones by
+// gatsby-plugin-netlify-cms-paths); resolve them, and /illustrations/*.svg, to
+// File nodes so templates get childImageSharp (raster) or publicURL (SVG).
+exports.createSchemaCustomization = ({ actions, schema }) => {
+  actions.createTypes([
+    schema.buildObjectType({
+      name: "MarkdownRemarkFrontmatter",
+      fields: {
+        featuredImage: {
+          type: "File",
+          resolve: (source, args, context) => {
+            if (!source.featuredImage) return null;
+            return context.nodeModel.findOne({
+              type: "File",
+              query: {
+                filter: {
+                  sourceInstanceName: { in: ["assets", "illustrations"] },
+                  // win32 basename also splits on "\", which the plugin emits on Windows
+                  base: { eq: path.win32.basename(source.featuredImage) },
+                },
+              },
+            });
+          },
+        },
+      },
+    }),
+  ]);
 };

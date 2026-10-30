@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="A line of dominoes toppling after a lightning strike">
+<title>A line of dominoes toppling after a lightning strike</title>
+<defs><pattern id="dots" width="32" height="32" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="2" fill="#000" fill-opacity="0.12"/></pattern></defs>
+<rect width="1600" height="1000" fill="#FFE0E0"/>
+<rect width="1600" height="1000" fill="url(#dots)"/>
+<g stroke="#000" stroke-width="10" stroke-linejoin="miter" stroke-linecap="square">
+<g><rect x="100" y="840" width="1400" height="30" fill="#000"/></g>
+<g transform="rotate(0 290 840)"><g><rect x="218" y="458" width="90" height="400" fill="#000"/><rect x="200" y="440" width="90" height="400" fill="#FFD23F"/></g><rect x="230" y="520" width="30" height="30" fill="#000"/><rect x="230" y="700" width="30" height="30" fill="#000"/></g>
+<g transform="rotate(0 460 840)"><g><rect x="388" y="458" width="90" height="400" fill="#000"/><rect x="370" y="440" width="90" height="400" fill="#FF6B6B"/></g><rect x="400" y="520" width="30" height="30" fill="#000"/><rect x="400" y="700" width="30" height="30" fill="#000"/></g>
+<g transform="rotate(0 630 840)"><g><rect x="558" y="458" width="90" height="400" fill="#000"/><rect x="540" y="440" width="90" height="400" fill="#74B9FF"/></g><rect x="570" y="520" width="30" height="30" fill="#000"/><rect x="570" y="700" width="30" height="30" fill="#000"/></g>
+<g transform="rotate(12 800 840)"><g><rect x="728" y="458" width="90" height="400" fill="#000"/><rect x="710" y="440" width="90" height="400" fill="#88D498"/></g><rect x="740" y="520" width="30" height="30" fill="#000"/><rect x="740" y="700" width="30" height="30" fill="#000"/></g>
+<g transform="rotate(28 970 840)"><g><rect x="898" y="458" width="90" height="400" fill="#000"/><rect x="880" y="440" width="90" height="400" fill="#FFA552"/></g><rect x="910" y="520" width="30" height="30" fill="#000"/><rect x="910" y="700" width="30" height="30" fill="#000"/></g>
+<g transform="rotate(48 1140 840)"><g><rect x="1068" y="458" width="90" height="400" fill="#000"/><rect x="1050" y="440" width="90" height="400" fill="#B8A9FA"/></g><rect x="1080" y="520" width="30" height="30" fill="#000"/><rect x="1080" y="700" width="30" height="30" fill="#000"/></g>
+<g transform="rotate(66 1310 840)"><g><rect x="1238" y="458" width="90" height="400" fill="#000"/><rect x="1220" y="440" width="90" height="400" fill="#7FDBDA"/></g><rect x="1250" y="520" width="30" height="30" fill="#000"/><rect x="1250" y="700" width="30" height="30" fill="#000"/></g>
+<g><polygon points="284,84 444,84 374,244 474,244 254,454 314,294 224,294" fill="#000"/><polygon points="260,60 420,60 350,220 450,220 230,430 290,270 200,270" fill="#FFD23F"/></g>
+</g>
+</svg>

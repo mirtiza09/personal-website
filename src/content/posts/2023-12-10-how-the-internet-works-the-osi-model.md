@@ -15,7 +15,7 @@ description: >-
 
 
   This article is just the start. Keep an eye out for a follow-up piece where I'll dive deeper into the software components that power our global web experiences.
-featuredImage: /assets/dall·e-2023-12-10-10.56.02-a-conceptual-image-representing-the-open-systems-interconnection-osi-model-in-a-teal-and-black-color-scheme-without-any-text.-the-illustration-shou.png
+featuredImage: /illustrations/how-the-internet-works.svg
 ---
 <!--StartFragment-->
 

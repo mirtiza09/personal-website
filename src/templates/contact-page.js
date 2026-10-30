@@ -1,10 +1,10 @@
-/** @jsx jsx */
-import { jsx } from "theme-ui"
+import React from "react"
 import { graphql } from "gatsby"
 import { RiSendPlane2Line } from "react-icons/ri"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import PageBand from "../components/page-band"
 
 export const pageQuery = graphql`
   query ContactQuery($id: String!) {
@@ -29,84 +29,88 @@ const Contact = ({ data }) => {
   const { frontmatter, html } = markdownRemark
 
   return (
-    <Layout className="contact-page" sx={contactStyles.contactPage}>
+    <Layout className="contact-page">
       <Seo
         title={frontmatter.title}
         description={frontmatter.title + " " + site.siteMetadata.title}
       />
-      <div className="wrapper">
-        <h1>{frontmatter.title}</h1>
+      <PageBand label="03 — Contact" title={frontmatter.title} tone="green">
         <div
-          className="description"
+          className="section-intro"
           dangerouslySetInnerHTML={{ __html: html }}
         />
-        <form
-          className="contact-form"
-          action="/thanks"
-          name="contact"
-          method="POST"
-          data-netlify="true"
-          data-netlify-honeypot="bot-field"
-        >
-          <input type="hidden" name="form-name" value="contact" />
-          <p>
-            <label>
-              Name
-              <input type="text" name="name" required />
-            </label>
-          </p>
-          <p>
-            <label>
-              Email
-              <input type="email" name="email" required />
-            </label>
-          </p>
-          <p>
-            <label>
-              Subject
-              <input type="text" name="subject" required />
-            </label>
-          </p>
-          <p>
-            <label>
-              Message<textarea name="message" required></textarea>
-            </label>
-          </p>
-          <p className="text-align-right">
-            <button
-              className="button"
-              sx={{
-                variant: "variants.button",
-              }}
-              type="submit"
-            >
-              Send Message{" "}
-              <span className="icon -right">
-                <RiSendPlane2Line />
-              </span>
-            </button>
-          </p>
-        </form>
-      </div>
+      </PageBand>
+      <section className="section">
+        <div className="container">
+          <form
+            className="contact-form"
+            action="/thanks"
+            name="contact"
+            method="POST"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+          >
+            <input type="hidden" name="form-name" value="contact" />
+            <p className="nb-field">
+              <label className="nb-label" htmlFor="contact-name">
+                Name
+              </label>
+              <input
+                className="nb-input"
+                id="contact-name"
+                type="text"
+                name="name"
+                required
+              />
+            </p>
+            <p className="nb-field">
+              <label className="nb-label" htmlFor="contact-email">
+                Email
+              </label>
+              <input
+                className="nb-input"
+                id="contact-email"
+                type="email"
+                name="email"
+                required
+              />
+            </p>
+            <p className="nb-field">
+              <label className="nb-label" htmlFor="contact-subject">
+                Subject
+              </label>
+              <input
+                className="nb-input"
+                id="contact-subject"
+                type="text"
+                name="subject"
+                required
+              />
+            </p>
+            <p className="nb-field">
+              <label className="nb-label" htmlFor="contact-message">
+                Message
+              </label>
+              <textarea
+                className="nb-input nb-textarea"
+                id="contact-message"
+                name="message"
+                required
+              ></textarea>
+            </p>
+            <p className="text-align-right">
+              <button className="btn btn-primary" type="submit">
+                Send Message{" "}
+                <span className="icon -right">
+                  <RiSendPlane2Line />
+                </span>
+              </button>
+            </p>
+          </form>
+        </div>
+      </section>
     </Layout>
   )
 }
 
 export default Contact
-
-const contactStyles = {
-  contactPage: {
-    input: {
-      border: "6px solid",
-      borderColor: "inputBorder",
-      bg: "inputBackground",
-      outline: "none",
-    },
-    textarea: {
-      border: "6px solid",
-      borderColor: "inputBorder",
-      bg: "inputBackground",
-      outline: "none",
-    },
-  },
-}

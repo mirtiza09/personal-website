@@ -1,30 +1,15 @@
-/** @jsx jsx */
-import { jsx } from "theme-ui"
 import React from "react"
 import { Link, graphql } from "gatsby"
 import { RiArrowRightLine, RiArrowLeftLine } from "react-icons/ri"
 import Layout from "../components/layout"
 import PostCard from "../components/post-card"
 import Seo from "../components/seo"
-
-const styles = {
-  pagination: {
-    a: {
-      color: "muted",
-      "&.is-active": {
-        color: "text",
-      },
-      "&:hover": {
-        color: "text",
-      },
-    },
-  },
-}
+import PageBand from "../components/page-band"
 
 export const blogListQuery = graphql`
   query blogListQuery($skip: Int!, $limit: Int!) {
     allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date] }
+      sort: { frontmatter: { date: DESC } }
       filter: { frontmatter: { template: { eq: "blog-post" } } }
       limit: $limit
       skip: $skip
@@ -38,8 +23,9 @@ export const blogListQuery = graphql`
             slug
             title
             featuredImage {
+              publicURL
               childImageSharp {
-                gatsbyImageData(layout: CONSTRAINED, width: 345, height: 260)
+                gatsbyImageData(layout: FULL_WIDTH, aspectRatio: 1.6)
               }
             }
           }
@@ -49,7 +35,7 @@ export const blogListQuery = graphql`
   }
 `
 const Pagination = props => (
-  <div className="pagination" sx={styles.pagination}>
+  <nav className="pagination" aria-label="Blog pages">
     <ul>
       {!props.isFirst && (
         <li>
@@ -66,6 +52,7 @@ const Pagination = props => (
           <Link
             to={`${props.blogSlug}${i === 0 ? "" : i + 1}`}
             className={props.currentPage === i + 1 ? "is-active num" : "num"}
+            aria-current={props.currentPage === i + 1 ? "page" : undefined}
           >
             {i + 1}
           </Link>
@@ -82,7 +69,7 @@ const Pagination = props => (
         </li>
       )}
     </ul>
-  </div>
+  </nav>
 )
 class BlogIndex extends React.Component {
   render() {
@@ -116,9 +103,13 @@ class BlogIndex extends React.Component {
             "Stackrole base blog page " + currentPage + " of " + numPages
           }
         />
-        <h1>Blog</h1>
-        <div className="grids col-1 sm-2 lg-3">{posts}</div>
-        <Pagination {...props} />
+        <PageBand label="01 — Writing" title="Blog" tone="blue" />
+        <section className="section">
+          <div className="container">
+            <div className="grids col-1 sm-2 lg-3">{posts}</div>
+            {numPages > 1 && <Pagination {...props} />}
+          </div>
+        </section>
       </Layout>
     )
   }

@@ -1,5 +1,4 @@
-/** @jsx jsx */
-import { jsx } from "theme-ui"
+import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
@@ -16,50 +15,46 @@ const query = graphql`
     site {
       siteMetadata {
         siteTitle: title
+        description
       }
     }
-    siteSearchIndex {
-      index
+    searchPages: allMarkdownRemark(
+      filter: { frontmatter: { template: { eq: "blog-post" } } }
+    ) {
+      nodes {
+        id
+        frontmatter {
+          title
+          slug
+        }
+      }
     }
   }
 `
 
-const Layout = ({ children, className, props }) => {
-  const { site, siteSearchIndex } = useStaticQuery(query)
-  const { siteTitle } = site.siteMetadata
+const Layout = ({ children, className }) => {
+  const { site, searchPages } = useStaticQuery(query)
+  const { siteTitle, description } = site.siteMetadata
 
   return (
     <div className="primary-container">
+      <a href="#main" className="skip-link">
+        Skip to content
+      </a>
       <Header>
         <Logo title={siteTitle} />
-        <div sx={layoutStyle.nav}>
-          <div sx={{ display: ["flex", "flex", "flex", "none"] }}>
-            <Search searchIndex={siteSearchIndex.index} />
-          </div>
-          <Navigation />
-        </div>
-        <div sx={layoutStyle.appearance}>
-          <Search searchIndex={siteSearchIndex.index} />
+        <Navigation />
+        <div className="header-actions">
+          <Search pages={searchPages.nodes} />
           <Theme />
         </div>
       </Header>
-      <main className={"container " + className}>{children}</main>
-      <Footer />
+      <main id="main" className={className}>
+        {children}
+      </main>
+      <Footer siteTitle={siteTitle} description={description} />
     </div>
   )
 }
 
 export default Layout
-
-const layoutStyle = {
-  appearance: {
-    display: ["none", "none", "none", "flex"],
-    alignItems: "center",
-    gap: 4,
-  },
-  nav: {
-    display: "flex",
-    alignItems: "center",
-    gap: 4,
-  },
-}

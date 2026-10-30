@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="Database cylinder, a results table and a magnifier">
+<title>Database cylinder, a results table and a magnifier</title>
+<defs><pattern id="dots" width="32" height="32" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="2" fill="#000" fill-opacity="0.12"/></pattern></defs>
+<rect width="1600" height="1000" fill="#E8F5E9"/>
+<rect width="1600" height="1000" fill="url(#dots)"/>
+<g stroke="#000" stroke-width="10" stroke-linejoin="miter" stroke-linecap="square">
+<rect x="204" y="584" width="400" height="150" fill="#000"/>
+<rect x="180" y="560" width="400" height="150" fill="#74B9FF"/>
+<ellipse cx="380" cy="560" rx="200" ry="50" fill="#74B9FF"/>
+<rect x="204" y="434" width="400" height="150" fill="#000"/>
+<rect x="180" y="410" width="400" height="150" fill="#7FDBDA"/>
+<ellipse cx="380" cy="410" rx="200" ry="50" fill="#7FDBDA"/>
+<rect x="204" y="284" width="400" height="150" fill="#000"/>
+<rect x="180" y="260" width="400" height="150" fill="#FFD23F"/>
+<ellipse cx="380" cy="260" rx="200" ry="50" fill="#FFD23F"/>
+<g><rect x="744" y="204" width="700" height="560" fill="#000"/><rect x="720" y="180" width="700" height="560" fill="#FFFFFF"/></g>
+<rect x="720" y="180" width="700" height="100" fill="#000"/>
+<rect x="720" y="280" width="175" height="115" fill="#FFFFFF"/>
+<rect x="895" y="280" width="175" height="115" fill="#FFFFFF"/>
+<rect x="1070" y="280" width="175" height="115" fill="#FFFFFF"/>
+<rect x="1245" y="280" width="175" height="115" fill="#FFFFFF"/>
+<rect x="720" y="395" width="175" height="115" fill="#FFD23F"/>
+<rect x="895" y="395" width="175" height="115" fill="#FFD23F"/>
+<rect x="1070" y="395" width="175" height="115" fill="#FFD23F"/>
+<rect x="1245" y="395" width="175" height="115" fill="#FFD23F"/>
+<rect x="720" y="510" width="175" height="115" fill="#FFFFFF"/>
+<rect x="895" y="510" width="175" height="115" fill="#FFFFFF"/>
+<rect x="1070" y="510" width="175" height="115" fill="#FFFFFF"/>
+<rect x="1245" y="510" width="175" height="115" fill="#FFFFFF"/>
+<rect x="720" y="625" width="175" height="115" fill="#FFFFFF"/>
+<rect x="895" y="625" width="175" height="115" fill="#FFFFFF"/>
+<rect x="1070" y="625" width="175" height="115" fill="#FFFFFF"/>
+<rect x="1245" y="625" width="175" height="115" fill="#FFFFFF"/>
+<circle cx="1324" cy="724" r="120" fill="#000"/><circle cx="1300" cy="700" r="120" fill="#FFE0E0"/>
+<line x1="1385" y1="785" x2="1500" y2="900" stroke-width="40"/>
+</g>
+</svg>

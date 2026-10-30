@@ -1,22 +1,40 @@
-/** @jsx jsx */
-import { jsx } from "theme-ui"
+import React from "react"
 import { Link } from "gatsby"
-import { RiHeart2Line } from "react-icons/ri"
 
-const Footer = () => (
-  <footer
-    className="site-footer"
-    sx={{
-      bg: "siteColor",
-    }}
-  >
+import SocialIcons from "./social-icons"
+
+const Footer = ({ siteTitle, description }) => (
+  <footer className="site-footer">
     <div className="container">
-      <p>
-        A GatsbyJS Starter for Netlify CMS, Made with{" "}
-        <span className="icon -love">
-          <RiHeart2Line />
-        </span>{" "}
-        by <Link to="/">Stackrole.com</Link>
+      <div className="footer-grid">
+        <div>
+          <Link to="/" className="footer-logo">
+            {siteTitle}
+            <span className="dot">.</span>
+          </Link>
+          <p className="footer-tagline">{description}</p>
+        </div>
+        <div>
+          <h2 className="footer-heading">Pages</h2>
+          <ul className="footer-links">
+            <li>
+              <Link to="/about">About</Link>
+            </li>
+            <li>
+              <Link to="/blog">Blog</Link>
+            </li>
+            <li>
+              <Link to="/contact">Contact</Link>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2 className="footer-heading">Elsewhere</h2>
+          <SocialIcons className="social-icons -footer" />
+        </div>
+      </div>
+      <p className="footer-bottom">
+        © {new Date().getFullYear()} {siteTitle}
       </p>
     </div>
   </footer>
