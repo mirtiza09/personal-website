@@ -1,5 +1,8 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
+import { RiArrowRightUpLine } from "react-icons/ri"
+
+import settings from "../util/site.json"
 
 const MenuItems = [
   {
@@ -46,6 +49,12 @@ const Navigation = () => {
             </Link>
           </li>
         ))}
+        <li>
+          <a href={settings.playbookUrl} className="-external">
+            Playbook
+            <RiArrowRightUpLine aria-hidden="true" />
+          </a>
+        </li>
       </ul>
     </nav>
   )

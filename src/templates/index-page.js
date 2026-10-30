@@ -1,7 +1,8 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
-import { RiArrowRightLine } from "react-icons/ri"
+import { RiArrowRightLine, RiArrowRightUpLine } from "react-icons/ri"
 
+import settings from "../util/site.json"
 import Layout from "../components/layout"
 import BlogListHome from "../components/blog-list-home"
 import Seo from "../components/seo"
@@ -113,6 +114,12 @@ const HomePage = ({ data }) => {
                     <RiArrowRightLine />
                   </span>
                 </Link>
+                <a href={settings.playbookUrl} className="btn btn-pink">
+                  Explore playbook
+                  <span className="icon -right">
+                    <RiArrowRightUpLine />
+                  </span>
+                </a>
                 <Link to="/blog" className="btn">
                   Read the blog
                 </Link>

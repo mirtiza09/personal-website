@@ -11,6 +11,7 @@
   .badge-orange,
   .badge-purple,
   .btn-yellow,
+  .btn-pink,
   mark,
   .site-navigation a:hover,
   .site-navigation a[aria-current="page"] {
@@ -163,6 +164,11 @@
       border-color: var(--ink);
       box-shadow: var(--shadow-sm);
     }
+    &.-external {
+      display: flex;
+      align-items: center;
+      gap: 0.2rem;
+    }
   }
   .menu-trigger {
     display: none;
@@ -310,6 +316,11 @@
 [data-theme="dark"] .hero .btn-primary:hover {
   background: var(--black);
   color: var(--white);
+}
+.btn-pink,
+.btn-pink:hover {
+  background: var(--pink);
+  color: var(--black);
 }
 .btn-yellow,
 .btn-yellow:hover {
