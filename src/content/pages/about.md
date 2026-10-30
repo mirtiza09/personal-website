@@ -5,7 +5,7 @@ title: About Irtiza
 ---
 I was born in 1999 in Karachi, Pakistan and raised in a tightly-knit, middle class family. From an early age, I was fascinated by computer technology, for I opened eyes in a world where personal computing had already permeated the fabric of society.
 
-![Toys](/assets/cover.jpg "Toys")
+![Toys](/illustrations/about-toys.svg "Toys")
 
 Eventually, I grew up and finished my elementary and secondary education, never getting bored of my fascination for computers. We were amongst the early majority in Pakistan when my father bought an amazing machine into our home in 2004 called the 'Personal Computer' and from then on, things changed. Opening up my Desktop Computer and tinkering around with its components was one of my childhood fascinations, coupled with sketching futuristic cars and reading and writing fiction.
 

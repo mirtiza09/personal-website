@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="Seven stacked network layers with a packet travelling down">
+<title>Seven stacked network layers with a packet travelling down</title>
+<defs><pattern id="dots" width="32" height="32" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="2" fill="#000" fill-opacity="0.12"/></pattern></defs>
+<rect width="1600" height="1000" fill="#F0ECFF"/>
+<rect width="1600" height="1000" fill="url(#dots)"/>
+<g stroke="#000" stroke-width="10" stroke-linejoin="miter" stroke-linecap="square">
+<g><rect x="274" y="154" width="900" height="80" fill="#000"/><rect x="260" y="140" width="900" height="80" fill="#FFD23F"/></g>
+<rect x="300" y="165" width="30" height="30" fill="#000"/>
+<rect x="360" y="172" width="16" height="16" fill="#000" stroke-width="0"/>
+<g><rect x="314" y="259" width="900" height="80" fill="#000"/><rect x="300" y="245" width="900" height="80" fill="#FF6B6B"/></g>
+<rect x="340" y="270" width="30" height="30" fill="#000"/>
+<rect x="400" y="277" width="16" height="16" fill="#000" stroke-width="0"/>
+<rect x="426" y="277" width="16" height="16" fill="#000" stroke-width="0"/>
+<g><rect x="354" y="364" width="900" height="80" fill="#000"/><rect x="340" y="350" width="900" height="80" fill="#74B9FF"/></g>
+<rect x="380" y="375" width="30" height="30" fill="#000"/>
+<rect x="440" y="382" width="16" height="16" fill="#000" stroke-width="0"/>
+<rect x="466" y="382" width="16" height="16" fill="#000" stroke-width="0"/>
+<rect x="492" y="382" width="16" height="16" fill="#000" stroke-width="0"/>
+<g><rect x="394" y="469" width="900" height="80" fill="#000"/><rect x="380" y="455" width="900" height="80" fill="#88D498"/></g>
+<rect x="420" y="480" width="30" height="30" fill="#000"/>
+<rect x="480" y="487" width="16" height="16" fill="#000" stroke-width="0"/>
+<rect x="506" y="487" width="16" height="16" fill="#000" stroke-width="0"/>
+<rect x="532" y="487" width="16" height="16" fill="#000" stroke-width="0"/>
+<rect x="558" y="487" width="16" height="16" fill="#000" stroke-width="0"/>
+<g><rect x="434" y="574" width="900" height="80" fill="#000"/><rect x="420" y="560" width="900" height="80" fill="#FFA552"/></g>
+<rect x="460" y="585" width="30" height="30" fill="#000"/>
+<rect x="520" y="592" width="16" height="16" fill="#000" stroke-width="0"/>
+<rect x="546" y="592" width="16" height="16" fill="#000" stroke-width="0"/>
+<rect x="572" y="592" width="16" height="16" fill="#000" stroke-width="0"/>
+<rect x="598" y="592" width="16" height="16" fill="#000" stroke-width="0"/>
+<rect x="624" y="592" width="16" height="16" fill="#000" stroke-width="0"/>
+<g><rect x="474" y="679" width="900" height="80" fill="#000"/><rect x="460" y="665" width="900" height="80" fill="#B8A9FA"/></g>
+<rect x="500" y="690" width="30" height="30" fill="#000"/>
+<rect x="560" y="697" width="16" height="16" fill="#000" stroke-width="0"/>
+<rect x="586" y="697" width="16" height="16" fill="#000" stroke-width="0"/>
+<rect x="612" y="697" width="16" height="16" fill="#000" stroke-width="0"/>
+<rect x="638" y="697" width="16" height="16" fill="#000" stroke-width="0"/>
+<rect x="664" y="697" width="16" height="16" fill="#000" stroke-width="0"/>
+<rect x="690" y="697" width="16" height="16" fill="#000" stroke-width="0"/>
+<g><rect x="514" y="784" width="900" height="80" fill="#000"/><rect x="500" y="770" width="900" height="80" fill="#7FDBDA"/></g>
+<rect x="540" y="795" width="30" height="30" fill="#000"/>
+<rect x="600" y="802" width="16" height="16" fill="#000" stroke-width="0"/>
+<rect x="626" y="802" width="16" height="16" fill="#000" stroke-width="0"/>
+<rect x="652" y="802" width="16" height="16" fill="#000" stroke-width="0"/>
+<rect x="678" y="802" width="16" height="16" fill="#000" stroke-width="0"/>
+<rect x="704" y="802" width="16" height="16" fill="#000" stroke-width="0"/>
+<rect x="730" y="802" width="16" height="16" fill="#000" stroke-width="0"/>
+<rect x="756" y="802" width="16" height="16" fill="#000" stroke-width="0"/>
+<g><rect x="1344" y="134" width="80" height="640" fill="#000"/><rect x="1330" y="120" width="80" height="640" fill="#FFFFFF"/></g>
+<g><polygon points="1304,774 1464,774 1384,894" fill="#000"/><polygon points="1290,760 1450,760 1370,880" fill="#FFD23F"/></g>
+</g>
+</svg>

@@ -3,7 +3,7 @@ template: index-page
 slug: /
 title: Muhammad Irtiza
 tagline: Full-Stack Product Manager
-featuredImage: /assets/website_image.jpg
+featuredImage: /illustrations/hero-product-builder.svg
 cta:
   ctaText: Know more
   ctaLink: /about

@@ -1,30 +1,119 @@
 // breakpoints
+$breakpoint-xs: 480px;
 $breakpoint-sm: 576px;
 $breakpoint-md: 768px;
-$breakpoint-lg: 1022px;
+$breakpoint-lg: 1024px;
 $breakpoint-xl: 1200px;
 
+// Neubrutalism tokens (see ~/.claude/skills/neubrutalism/references/tokens.md)
+// Border and shadow tokens are re-declared on .hero so they pick up its local --ink
+// (a custom property resolves var() where it is declared, not where it is used).
+:root,
+.hero {
+  // Border: the main structural signifier
+  --border: 3px solid var(--ink);
+  --border-thin: 2px solid var(--ink);
+  --border-thick: 4px solid var(--ink);
+
+  // Hard shadows: offset x = y, blur 0, spread 0
+  --shadow-sm: 3px 3px 0 0 var(--ink);
+  --shadow: 5px 5px 0 0 var(--ink);
+  --shadow-lg: 8px 8px 0 0 var(--ink);
+  --shadow-xl: 12px 12px 0 0 var(--ink);
+
+  --radius: 0;
+}
+
 :root {
-  --font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
-    helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
-  --font-family-mono: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console,
-    monospace;
-  --font-size-small: 12px;
+  // Semantic
+  --ink: #000;
+  --text: #000;
+  --surface: #fff;
+  --surface-2: #f5f0e8;
+  --muted: #666;
+  --hairline: #ddd;
+  --placeholder: #999;
+  --code-bg: #1a1a2e;
 
-  --home-link-color: #d4d4d4;
-  --home-link-hover-color: var(--primary-color);
+  // Palette
+  --black: #000;
+  --white: #fff;
+  --bg: #fffdf5;
+  --bg-warm: #f5f0e8;
+  --yellow: #ffd23f;
+  --yellow-light: #fff3c4;
+  --pink: #ff6b6b;
+  --pink-light: #ffe0e0;
+  --blue: #74b9ff;
+  --blue-light: #e3f2fd;
+  --green: #88d498;
+  --green-light: #e8f5e9;
+  --orange: #ffa552;
+  --orange-light: #fff0e0;
+  --purple: #b8a9fa;
+  --purple-light: #f0ecff;
+  --cyan: #7fdbda;
+  --red: #ff4444;
 
-  --button-color: #e5c3d3;
-  --button-alternate-color: #5c2941;
+  // Type
+  --font-display: "Syne", sans-serif;
+  --font-heading: "Space Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "Space Mono", monospace;
 
-  --post-link-color: #0f070b;
-
-  --nav-link-hover-bg: #111;
-  --text-color-meta: rgba(0, 0, 0, 0.5);
-
-  --label-text: #777;
-  --input-focus-border: #83aaac;
+  // Spacing
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+  --space-4xl: 8rem;
 
   // CSS Grid Utility
-  --grid-gap: 30px;
+  --grid-gap: var(--space-lg);
+}
+
+// Dark theme ("cyber-brutalism"): ink turns light, accents keep their values
+[data-theme="dark"] {
+  --ink: #f3f3f6;
+  --text: #ececed;
+  --surface: #1f1e28;
+  --surface-2: #2b2a37;
+  --bg: #14131a;
+  --bg-warm: #2b2a37;
+  --muted: #a6a6b0;
+  --hairline: #3a3946;
+  --placeholder: #8a8a93;
+  --code-bg: #0e0e1a;
+  --yellow-light: #2a2512;
+  --pink-light: #2d191e;
+  --blue-light: #14202f;
+  --green-light: #13271b;
+  --orange-light: #2d2414;
+  --purple-light: #1f1b2f;
+}
+
+// Shadows shrink on small screens
+@media (max-width: $breakpoint-md) {
+  :root,
+  .hero {
+    --shadow: 4px 4px 0 0 var(--ink);
+    --shadow-lg: 6px 6px 0 0 var(--ink);
+    --shadow-xl: 8px 8px 0 0 var(--ink);
+  }
+}
+@media (max-width: 320px) {
+  :root,
+  .hero {
+    --space-md: 1rem;
+    --space-lg: 1.25rem;
+    --space-xl: 1.75rem;
+    --space-2xl: 2.5rem;
+    --space-3xl: 3rem;
+    --shadow: 3px 3px 0 0 var(--ink);
+    --shadow-lg: 5px 5px 0 0 var(--ink);
+    --shadow-xl: 6px 6px 0 0 var(--ink);
+  }
 }

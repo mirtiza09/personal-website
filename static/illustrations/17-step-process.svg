@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="A seventeen-step staircase climbing to a flag">
+<title>A seventeen-step staircase climbing to a flag</title>
+<defs><pattern id="dots" width="32" height="32" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="2" fill="#000" fill-opacity="0.12"/></pattern></defs>
+<rect width="1600" height="1000" fill="#FFF3C4"/>
+<rect width="1600" height="1000" fill="url(#dots)"/>
+<g stroke="#000" stroke-width="10" stroke-linejoin="miter" stroke-linecap="square">
+<g><rect x="120" y="840" width="78" height="60" fill="#FFD23F"/></g>
+<g><rect x="198" y="798" width="78" height="102" fill="#FF6B6B"/></g>
+<g><rect x="276" y="756" width="78" height="144" fill="#74B9FF"/></g>
+<g><rect x="354" y="714" width="78" height="186" fill="#88D498"/></g>
+<g><rect x="432" y="672" width="78" height="228" fill="#FFA552"/></g>
+<g><rect x="510" y="630" width="78" height="270" fill="#B8A9FA"/></g>
+<g><rect x="588" y="588" width="78" height="312" fill="#7FDBDA"/></g>
+<g><rect x="666" y="546" width="78" height="354" fill="#FFD23F"/></g>
+<g><rect x="744" y="504" width="78" height="396" fill="#FF6B6B"/></g>
+<g><rect x="822" y="462" width="78" height="438" fill="#74B9FF"/></g>
+<g><rect x="900" y="420" width="78" height="480" fill="#88D498"/></g>
+<g><rect x="978" y="378" width="78" height="522" fill="#FFA552"/></g>
+<g><rect x="1056" y="336" width="78" height="564" fill="#B8A9FA"/></g>
+<g><rect x="1134" y="294" width="78" height="606" fill="#7FDBDA"/></g>
+<g><rect x="1212" y="252" width="78" height="648" fill="#FFD23F"/></g>
+<g><rect x="1290" y="210" width="78" height="690" fill="#FF6B6B"/></g>
+<g><rect x="1368" y="168" width="78" height="732" fill="#74B9FF"/></g>
+<polyline points="120,840 198,840 198,798 276,798 276,756 354,756 354,714 432,714 432,672 510,672 510,630 588,630 588,588 666,588 666,546 744,546 744,504 822,504 822,462 900,462 900,420 978,420 978,378 1056,378 1056,336 1134,336 1134,294 1212,294 1212,252 1290,252 1290,210 1368,210 1368,168 1446,168" fill="none" stroke-width="14"/>
+<rect x="1430" y="70" width="14" height="130" fill="#000"/>
+<g><polygon points="1456,82 1572,117 1456,152" fill="#000"/><polygon points="1444,70 1560,105 1444,140" fill="#FF6B6B"/></g>
+<g><rect x="174" y="164" width="300" height="160" fill="#000"/><rect x="150" y="140" width="300" height="160" fill="#FFFFFF"/></g>
+<g><rect x="185" y="175" width="30" height="24" fill="#88D498"/></g>
+<rect x="235" y="183" width="180" height="10" fill="#000" stroke-width="0"/>
+<g><rect x="185" y="215" width="30" height="24" fill="#88D498"/></g>
+<rect x="235" y="223" width="140" height="10" fill="#000" stroke-width="0"/>
+<g><rect x="185" y="255" width="30" height="24" fill="#88D498"/></g>
+<rect x="235" y="263" width="100" height="10" fill="#000" stroke-width="0"/>
+</g>
+</svg>

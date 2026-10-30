@@ -1,54 +1,30 @@
-/** @jsx jsx */
-import { jsx } from "theme-ui"
+import React, { useEffect } from "react"
 import { useColorMode } from "theme-ui"
 import { FiMoon, FiSun } from "react-icons/fi"
 
 const Theme = () => {
   const [colorMode, setColorMode] = useColorMode()
+  const isDark = colorMode === "dark"
+
+  // The CSS tokens switch on html[data-theme]
+  useEffect(() => {
+    document.documentElement.setAttribute(
+      "data-theme",
+      isDark ? "dark" : "light",
+    )
+  }, [isDark])
+
   return (
-    <div sx={themeStyles.modeOption}>
-      <button
-        onClick={e => {
-          setColorMode(colorMode === "default" ? "dark" : "default")
-        }}
-      >
-        <div sx={themeStyles.modeIcons}>
-          <div>{colorMode === "default" ? <FiMoon /> : <FiSun />}</div>
-          <div sx={themeStyles.modeText}>
-            {colorMode === "default" ? "Dark" : "Light"}
-          </div>
-        </div>
-      </button>
-    </div>
+    <button
+      type="button"
+      className="icon-btn"
+      aria-label={isDark ? "Switch to light theme" : "Switch to dark theme"}
+      aria-pressed={isDark}
+      onClick={() => setColorMode(isDark ? "light" : "dark")}
+    >
+      {isDark ? <FiSun /> : <FiMoon />}
+    </button>
   )
 }
-export default Theme
 
-const themeStyles = {
-  modeOption: {
-    button: {
-      fontSize: "25px",
-      bg: "transparent",
-      border: "none",
-      cursor: "pointer",
-      mt: "-5px",
-      p: "0 20px 0 0",
-      "&:hover": {
-        color: "#bea9b3",
-      },
-    },
-  },
-  modeIcons: {
-    display: "flex",
-    alignItems: "center",
-    color: "#fff",
-    mt: "10px",
-  },
-  modeText: {
-    fontSize: "16px",
-    display: ["block", "block", "block", "none"],
-    p: " 0 10px",
-    mt: "-5px",
-    letterSpacing: "1px",
-  },
-}
+export default Theme

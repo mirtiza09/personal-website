@@ -13,7 +13,7 @@ description: >
   robust web applications. This comprehensive guide is perfect for web
   developers and newcomers seeking a holistic view of the web's technical
   framework.
-featuredImage: /assets/dall·e-2023-12-10-11.39.04-a-structured-illustration-depicting-34-important-concepts-and-tools-for-web-development-with-a-less-cluttered-design.-the-artwork-should-present-a-.png
+featuredImage: /illustrations/web-development-concepts.svg
 ---
 <!--StartFragment-->
 

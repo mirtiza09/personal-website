@@ -1,9 +1,5 @@
-/** @jsx jsx */
-import { jsx } from "theme-ui"
-import React from "react"
+import React, { useState } from "react"
 import { Link } from "gatsby"
-import { RiMenu3Line, RiCloseLine } from "react-icons/ri"
-import Theme from "../components/theme"
 
 const MenuItems = [
   {
@@ -24,72 +20,35 @@ const MenuItems = [
   },
 ]
 
-const ListLink = props => (
-  <li>
-    <Link to={props.to}>{props.children}</Link>
-  </li>
-)
+const Navigation = () => {
+  const [showMenu, setShowMenu] = useState(false)
 
-class Navigation extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = { showMenu: false }
-    this.handleToggleClick = this.handleToggleClick.bind(this)
-  }
-
-  handleToggleClick() {
-    this.setState(state => ({
-      showMenu: !state.showMenu,
-    }))
-  }
-
-  render() {
-    const listMenuItems = MenuItems.map((menuItem, index) => (
-      <ListLink key={index} to={menuItem.path}>
-        {menuItem.title}
-      </ListLink>
-    ))
-    return (
-      <nav className="site-navigation" sx={navStyle.menu}>
-        <button
-          aria-label="toggle menu"
-          onClick={this.handleToggleClick}
-          className={"menu-trigger" + (this.state.showMenu ? " is-active" : "")}
-        >
-          <div className="icon-menu-line">
-            <RiMenu3Line />
-          </div>
-          <div className="icon-menu-close">
-            <RiCloseLine />
-          </div>
-        </button>
-        <ul>
-          {listMenuItems}
-          <div sx={navStyle.border}></div>
-          <div sx={navStyle.theme}>
-            <Theme />
-          </div>
-        </ul>
-      </nav>
-    )
-  }
+  return (
+    <nav className="site-navigation" aria-label="Main navigation">
+      <button
+        type="button"
+        className={"menu-trigger" + (showMenu ? " is-active" : "")}
+        aria-expanded={showMenu}
+        aria-controls="nav-links"
+        onClick={() => setShowMenu(!showMenu)}
+      >
+        {showMenu ? "Close" : "Menu"}
+      </button>
+      <ul id="nav-links">
+        {MenuItems.map(menuItem => (
+          <li key={menuItem.path}>
+            <Link
+              to={menuItem.path}
+              partiallyActive={menuItem.path !== "/"}
+              onClick={() => setShowMenu(false)}
+            >
+              {menuItem.title}
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  )
 }
 
 export default Navigation
-
-const navStyle = {
-  menu: {
-    ul: {
-      bg: "siteColor",
-    },
-  },
-  theme: {
-    display: ["block", "block", "block", "none"],
-    p: " 25px 20px 20px",
-  },
-  border: {
-    bg: "borderColor",
-    borderTop: "1px solid transparent",
-    display: ["block", "block", "block", "none"],
-  },
-}

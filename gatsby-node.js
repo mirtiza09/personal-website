@@ -90,8 +90,8 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 };
 
 // CMS stores images as /assets/... paths (rewritten to relative ones by
-// gatsby-plugin-netlify-cms-paths); resolve them to File nodes in static/assets
-// so gatsby-plugin-image can process them.
+// gatsby-plugin-netlify-cms-paths); resolve them, and /illustrations/*.svg, to
+// File nodes so templates get childImageSharp (raster) or publicURL (SVG).
 exports.createSchemaCustomization = ({ actions, schema }) => {
   actions.createTypes([
     schema.buildObjectType({
@@ -105,7 +105,7 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
               type: "File",
               query: {
                 filter: {
-                  sourceInstanceName: { eq: "assets" },
+                  sourceInstanceName: { in: ["assets", "illustrations"] },
                   // win32 basename also splits on "\", which the plugin emits on Windows
                   base: { eq: path.win32.basename(source.featuredImage) },
                 },

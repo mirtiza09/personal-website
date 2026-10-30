@@ -1,0 +1,85 @@
+// Prism theme in the neubrutalism code-block palette
+pre[class*="language-"] {
+  margin: var(--space-lg) 0;
+  padding: var(--space-md);
+  overflow-x: auto;
+  background: var(--code-bg);
+  border: var(--border);
+  box-shadow: var(--shadow);
+}
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #e0e0e0;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  line-height: 1.7;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  tab-size: 2;
+  hyphens: none;
+}
+pre[class*="language-"] code {
+  background: none;
+  border: none;
+  padding: 0;
+}
+:not(pre) > code[class*="language-"] {
+  color: var(--text);
+  background: var(--surface-2);
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #6b7280;
+  font-style: italic;
+}
+.token.punctuation {
+  color: #e0e0e0;
+}
+.token.property,
+.token.attr-name,
+.token.constant,
+.token.symbol,
+.token.builtin {
+  color: #7fdbda;
+}
+.token.number,
+.token.boolean,
+.token.important,
+.token.variable,
+.token.regex {
+  color: #ffd23f;
+}
+.token.selector,
+.token.keyword,
+.token.atrule,
+.token.deleted {
+  color: #ff6b6b;
+}
+.token.tag,
+.token.function,
+.token.class-name {
+  color: #74b9ff;
+}
+.token.string,
+.token.char,
+.token.attr-value,
+.token.inserted,
+.token.url {
+  color: #88d498;
+}
+.token.operator,
+.token.entity {
+  color: #b8a9fa;
+}
+.token.bold {
+  font-weight: 700;
+}
+.token.italic {
+  font-style: italic;
+}

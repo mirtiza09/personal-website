@@ -25,6 +25,13 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        path: `${__dirname}/static/illustrations/`,
+        name: `illustrations`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         path: `${__dirname}/src/content/`,
         name: `content`,
       },
@@ -79,11 +86,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Foundation`,
-        short_name: `Foundation`,
+        name: `Muhammad Irtiza`,
+        short_name: `Muhammad Irtiza`,
         start_url: `/`,
-        background_color: `#f7f0eb`,
-        theme_color: `#a2466c`,
+        background_color: `#FFFDF5`,
+        theme_color: `#FFD23F`,
         display: `standalone`,
         icon: "static" + settings.meta.iconimage,
       },
